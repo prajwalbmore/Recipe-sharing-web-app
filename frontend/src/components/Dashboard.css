@@ -1,0 +1,130 @@
+/* General layout */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 250px;
+    background-color: #3b3f5c;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #565d8b;
+  }
+  
+  .sidebar .btn-primary {
+    background-color: #4e54c8;
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .sidebar .btn-primary:hover {
+    background-color: #757de8;
+  }
+  
+  /* Main content area */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3b3f5c;
+  }
+  
+  .main-content .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  /* Navbar styling */
+  .navbar-custom {
+    background-color: #3b3f5c;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .navbar-custom h3 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .navbar-custom button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-custom button:hover {
+    color: #a3a7d5;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #4e54c8;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #757de8;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+  
+    .main-content {
+      padding: 15px;
+    }
+  }
+  

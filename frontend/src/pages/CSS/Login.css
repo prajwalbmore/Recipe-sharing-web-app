@@ -1,0 +1,111 @@
+/* General layout for the entire section */
+.h-custom {
+    height: 100vh;
+    background-color: orangered;
+}
+
+.container {
+    height: 100%;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 3rem;
+}
+
+.card-body h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+/* Form input fields */
+.form-outline {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid #0b0808;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Focus styles */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Button styles */
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Link to Register */
+h8 {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h8 a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+h8 a:hover {
+    text-decoration: underline;
+}
+
+/* ToastContainer styling */
+.Toastify__toast-container {
+    z-index: 9999;
+}
+
+/* Responsive styling for smaller devices */
+@media (max-width: 767px) {
+    .card-body {
+        padding: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .form-control {
+        font-size: 1rem;
+        
+    }
+
+    .btn-success {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

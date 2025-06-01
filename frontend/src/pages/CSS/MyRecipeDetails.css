@@ -1,0 +1,165 @@
+/* Center main content */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Card Styling */
+.card-body {
+    max-width: 800px;
+    width: 100%;
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Recipe Title */
+.card-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Description and Category */
+h5, .card-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 1rem 0;
+}
+
+/* Buttons */
+.btn-warning, .btn-danger {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    margin-right: 10px;
+}
+
+.btn-warning {
+    color: #ffffff;
+    background-color: #ffc107;
+}
+
+.btn-danger {
+    color: #ffffff;
+    background-color: #dc3545;
+}
+
+/* Rating Stars */
+.star-icon {
+    color: #ffcc00; /* Gold color for stars */
+    font-size: 1.5rem;
+}
+
+/* Review Section */
+.reviews-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-section h5 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.review-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+}
+
+/* Profile Image and Review Header */
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.review-header .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.review-header .review-author {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.review-header .review-date {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Rating Stars */
+.review-rating {
+    display: flex;
+    align-items: center;
+    color: #ffcc00;
+    font-size: 1rem;
+}
+
+/* Review Comment */
+.review-comment {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Helpful Section */
+.review-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.review-footer .helpful-icon {
+    color: #f65a22;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.review-footer .helpful-icon:hover {
+    color: #e14a1a;
+}
+
+.review-footer .helpful-text {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+    .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    .review-comment {
+        margin-left: 0;
+    }
+}
